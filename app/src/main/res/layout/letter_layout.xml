@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="0.0px"
+    android:background="@drawable/mainbackground">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:weightSum="19">
+
+            <TextView
+                android:id="@+id/all_letter"
+                style="@style/TitleTextView"
+                android:layout_height="match_parent"
+                android:layout_weight="18"
+                android:text="@string/letter_activity" />
+
+            <ImageView
+                android:id="@+id/letter_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/letter_add"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="onRefrehClick"
+                android:scaleType="center"
+                android:src="@drawable/_refresh" />
+
+            <ImageView
+                android:id="@+id/letter_add"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_weight="0"
+                android:clickable="true"
+                android:onClick="onAddClick"
+                android:scaleType="center"
+                android:src="@drawable/_add" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dip"
+                android:layout_marginRight="0dip"
+                android:layout_marginTop="1dip"
+                android:background="#a52f"
+                android:gravity="top"
+                android:paddingLeft="0dip"
+                android:paddingTop="2dip"
+                android:textSize="3dip" />
+
+            <ListView
+                android:id="@+id/letter_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"></ListView>
+        </LinearLayout>
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup_letter"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <RadioButton
+                android:id="@+id/radio_button_letter_broadcast"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.0dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:button="@null"
+                android:drawableTop="@android:drawable/ic_dialog_dialer"
+                android:text="话题"/>
+
+
+            <RadioButton
+                android:id="@+id/radio_button_letter_friend"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.0dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:button="@null"
+                android:drawableTop="@android:drawable/ic_menu_sort_by_size"
+                android:text="好友" />
+
+            <RadioButton
+                android:id="@+id/radio_button_letter_letter"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.0dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:button="@null"
+                android:drawableTop="@android:drawable/ic_dialog_email"
+                android:text="私信"
+                android:textColor="#a0f"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+</LinearLayout>

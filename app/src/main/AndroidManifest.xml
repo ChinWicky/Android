@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lenovo.application_1214" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:name=".game.application.Config">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <meta-data
+                android:name="com.amap.api.v2.apikey"
+                android:value="0524e572da9858235ecdb6e3893c9928"/>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".loginSignin.LoginActivity"></activity>
+        <activity android:name=".loginSignin.SigninActivity"></activity>
+        <activity android:name=".broadcast.BroadcastActivity"></activity>
+        <activity android:name=".friend.FriendActivity"></activity>
+        <activity android:name=".friend.FindFriendActivity"></activity>
+        <activity android:name=".friend.AddFriendActivity"></activity>
+        <activity android:name=".friend.FriendOperateActivity"></activity>
+        <activity android:name=".broadcast.AddBroadcastActivity"></activity>
+        <activity android:name=".broadcast.TopicActivity"></activity>
+        <activity android:name=".loginSignin.ProfileActivity"></activity>
+        <activity android:name=".broadcast.MyTopicActivity"></activity>
+        <activity android:name=".broadcast.TopicOperateActivity"></activity>
+        <activity android:name=".broadcast.DiscussActivity"></activity>
+        <activity android:name=".broadcast.AddDiscussActivity"></activity>
+        <activity android:name=".letter.LetterActivity"></activity>
+        <activity android:name=".letter.AddLetterActivity"></activity>
+        <activity android:name=".letter.PrivateLetterActivity"></activity>
+        <activity android:name=".letter.MyLetterActivity"></activity>
+        <activity android:name=".loginSignin.RevisePasswordActivity"></activity>
+        <!--<activity android:name=".path.PathViewActivity"></activity>-->
+        <activity android:name=".game.activity.GameMainActivity"></activity>
+        <activity android:name=".game.activity.ConfigActivity"></activity>
+        <activity android:name=".music.MainMusicActivity"></activity>
+        <activity android:name=".video.VideoActivity"></activity>
+        <activity android:name=".draw.MainDrawActivity"></activity>
+        <activity android:name=".map.MapActivity"></activity>
+        <activity android:name=".weather.MainWeatherActivity"></activity>
+        <activity android:name=".weather.WeatherActivity"></activity>
+        <activity android:name=".camera.CameraActivity"></activity>
+        <activity android:name=".screenCapture.ScreenActivity"></activity>
+        <service
+            android:name=".weather.service.AutoUpdateService"
+            android:enabled="true"
+            android:exported="true"></service>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+</manifest>

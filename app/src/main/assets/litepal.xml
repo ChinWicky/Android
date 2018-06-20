@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+
+    <dbname value="cool_weather"/>
+
+    <version value="1"/>
+
+    <list>
+        <mapping class="com.example.lenovo.application_1214.database.table.Province"/>
+        <mapping class="com.example.lenovo.application_1214.database.table.City"/>
+        <mapping class="com.example.lenovo.application_1214.database.table.County"/>
+    </list>
+
+</litepal>
