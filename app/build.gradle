@@ -42,6 +42,7 @@ android {
     lintOptions {
         abortOnError false
     }
+    buildToolsVersion '26.0.2'
 }
 task checkstyle(type: Checkstyle) {
     configFile file('../config/checkstyle/checkstyle.xml')
